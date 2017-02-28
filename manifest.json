@@ -7,5 +7,10 @@
   "browser_action": {
     "default_icon": "img/favicon-vflz7uhzw.ico",
     "default_popup": "block.html"
-  }
+  },
+  "content_scripts": [
+    {
+    	"matches": ["http://www.youtube.com/*"],
+      "js": ["scripts/jquery.js", "scripts/myscript.js"]
+    }]
 }
