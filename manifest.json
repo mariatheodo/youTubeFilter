@@ -1,0 +1,11 @@
+{
+  "name": "YouTube Filter",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "My first Chrome extension.",
+  "homepage_url": "http://www.youtube.com",
+  "browser_action": {
+    "default_icon": "img/favicon-vflz7uhzw.ico",
+    "default_popup": "block.html"
+  }
+}
