@@ -6,11 +6,20 @@
   "homepage_url": "http://www.youtube.com",
   "browser_action": {
     "default_icon": "img/favicon-vflz7uhzw.ico",
-    "default_popup": "block.html"
+    "default_title": "Click here!"
   },
   "content_scripts": [
     {
-    	"matches": ["http://www.youtube.com/*"],
-      "js": ["scripts/jquery.js", "scripts/myscript.js"]
-    }]
+    	"matches": ["https://www.youtube.com/*"],
+      "js": ["scripts/jquery.js", "scripts/myscript.js"],
+      "run_at":"document_start"
+    }],
+  "permissions": [
+      "activeTab",
+      "https://ajax.googleapis.com/"
+  ],
+  "background": {
+    "scripts": ["scripts/background.js"],
+    "persistent": false
+  }
 }
