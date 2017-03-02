@@ -10,7 +10,7 @@
   },
   "content_scripts": [
     {
-    	"matches": ["https://www.youtube.com/*"],
+    	"matches": ["https://www.youtube.com/", "https://www.youtube.com/*"],
       "js": ["scripts/jquery.js", "scripts/myscript.js"],
       "run_at":"document_start"
     }],
@@ -19,7 +19,7 @@
       "https://ajax.googleapis.com/"
   ],
   "background": {
-    "scripts": ["scripts/background.js"],
+    "scripts": ["scripts/background2.js"],
     "persistent": false
   }
 }

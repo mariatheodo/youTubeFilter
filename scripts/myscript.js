@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-	var blocked = "Lana Del Rey - Love";
-	function() {
-		$('a').each(function() {
-			if ($('a') === blocked) {
-				alert("yes");
-			};
-		};
-	};
+	var list = document.getElementsByTagName("a");
+	console.log(list);
+	for (var i =0; i < list.length; i++) {
+		if (list[i].innerHTML.toLowerCase().includes("winx")) {
+			console.log(list[i]);
+		       list[i].parentElement.parentElement.parentElement.style.display = 'none';
+		}
+	}
 });
